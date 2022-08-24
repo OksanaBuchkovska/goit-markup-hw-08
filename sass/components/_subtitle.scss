@@ -1,0 +1,5 @@
+.subtitle {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+}

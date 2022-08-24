@@ -1,0 +1,22 @@
+.contacts-list {
+  @include flex;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.contacts-item-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-link {
+  @include flex;
+  @include font(500, 14px, 1.14, 0.02em);
+  padding: 32px 0;
+  color: var(--primary-text-color);
+  transition: color var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
