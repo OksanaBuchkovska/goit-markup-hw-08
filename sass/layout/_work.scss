@@ -1,16 +1,20 @@
 .work {
   padding-top: 0;
+  padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
-  &-list {
+  &__list {
     display: flex;
     gap: 30px;
   }
-  &-item {
+  &__item {
     width: calc((100% - 60px) / 3);
     position: relative;
   }
 
-  &-wrap {
+  &__wrap {
     @include flex;
     position: absolute;
     bottom: 0;
@@ -19,7 +23,7 @@
     background-color: rgba(47, 48, 58, 0.8);
   }
 
-  &-title {
+  &__title {
     @include font(700, 14px, 1.14, 0.03em);
     text-align: center;
     text-transform: uppercase;
