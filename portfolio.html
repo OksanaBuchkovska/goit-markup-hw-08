@@ -285,7 +285,7 @@
     </main>
     <!--Підвал-->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="footer__box container">
         <div class="footer__contacts">
           <a href="./index.html" class="footer__logo logo link" lang="en"
             >Web<span class="footer__studio studio--color-light"
@@ -316,7 +316,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer__box">
+        <div class="footer__join">
           <p class="footer__title subtitle">Приєднуйтесь</p>
           <ul class="social">
             <li class="social__item list">
@@ -349,21 +349,23 @@
             </li>
           </ul>
         </div>
-        <form class="footer__form">
-          <h4 class="footer__title subtitle">Підпишіться на розсилку</h4>
-          <input
-            class="form__input"
-            type="email"
-            name="email"
-            placeholder="E-mail"
-          />
-          <button type="submit" class="form__button btn">
-            Підписатися
-            <svg class="send__icon" width="24" height="24">
-              <use href="./img/icons.svg/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        <div class="footer__subscribe">
+          <form class="footer__form">
+            <h4 class="footer__title subtitle">Підпишіться на розсилку</h4>
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="form__button btn">
+              Підписатися
+              <svg class="send__icon" width="24" height="24">
+                <use href="./img/icons.svg/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

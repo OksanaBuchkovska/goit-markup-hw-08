@@ -1,28 +1,38 @@
-.address__item {
-  margin-bottom: 9px;
-  &:last-child {
-    margin-bottom: 0;
+.address {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
   }
-}
 
-.address__link {
-  display: block;
-  @include font(null, 14px, 1.71, 0.03em);
-  color: var(--second-title-text-color);
-  transition: color var(--timing-function);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }
+    }
   }
-}
 
-.address__contacts {
-  display: block;
-  @include font(null, 14px, 1.14, 0.02em);
-  color: rgba(255, 255, 255, 0.6);
-  transition: color var(--timing-function);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  &__link {
+    display: block;
+    @include font(null, 14px, 1.71, 0.03em);
+    color: var(--second-title-text-color);
+    transition: color var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__contacts {
+    display: block;
+    @include font(null, 14px, 1.71, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
