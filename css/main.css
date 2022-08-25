@@ -89,10 +89,10 @@ img {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -531,6 +531,12 @@ img {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .work__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
 .work__list {
   display: flex;
   gap: 30px;
@@ -549,7 +555,7 @@ img {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.work__title {
+.work__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -565,6 +571,12 @@ img {
 @media screen and (min-width: 1200px) {
   .team {
     padding: 94px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 .team__list {
@@ -622,30 +634,57 @@ img {
   color: var(--primary-text-color);
 }
 
-.clients-list {
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
-.clients-link {
+.clients__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
+}
+
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
   transition: color var(--timing-function), border-color var(--timing-function);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
 
