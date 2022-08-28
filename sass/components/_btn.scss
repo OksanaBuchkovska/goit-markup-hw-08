@@ -2,9 +2,9 @@
   @include font(700, 16px, 1.88, 0.06em);
   cursor: pointer;
   min-width: 200px;
+  height: 50px;
   border: none;
   border-radius: 4px;
-  font-family: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--second-title-text-color);
   background-color: var(--accent-color);
