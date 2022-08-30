@@ -1,20 +1,31 @@
-.contacts-list {
-  @include flex;
-  margin-left: auto;
-  gap: 30px;
+.contacts__list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    @include flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    @include flex;
+    margin-left: auto;
+    gap: 30px;
+  }
 }
 
-.contacts-item-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contacts-link {
+.contacts__link {
   @include flex;
   @include font(500, 14px, 1.14, 0.02em);
-  padding: 32px 0;
   color: var(--primary-text-color);
   transition: color var(--timing-function);
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+  }
   &:hover,
   &:focus {
     color: var(--accent-color);
