@@ -1,15 +1,16 @@
 .contacts__list {
-  display: none;
   @media screen and (min-width: 768px) {
     margin-left: auto;
-    @include flex;
     gap: 10px;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
   @media screen and (min-width: 1200px) {
-    @include flex;
     margin-left: auto;
     gap: 30px;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -23,8 +24,9 @@
   @include font(500, 14px, 1.14, 0.02em);
   color: var(--primary-text-color);
   transition: color var(--timing-function);
-  @media screen and (min-width: 1200px) {
-    padding: 32px 0;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
   }
   &:hover,
   &:focus {
