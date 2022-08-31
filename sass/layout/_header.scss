@@ -67,9 +67,15 @@
   border: none;
   padding: 0;
   background-color: rgba(0, 0, 0, 0);
+  transition: fill var(--timing-function);
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.menu-open:hover,
+.menu-open:focus {
+  fill: var(--accent-color);
 }
 
 .menu {
