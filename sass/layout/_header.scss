@@ -78,13 +78,12 @@
   fill: var(--accent-color);
 }
 
-.menu {
+.mob-menu {
   position: fixed;
   z-index: 2;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding: 48px 40px;
   background-color: var(--primary-bg-color);
   top: 0;
   > .container {
@@ -150,24 +149,14 @@
   flex-wrap: wrap;
 }
 
-// .soc-item {
-//   padding-right: 10px;
-// }
-
-// .soc__item::before {
-//   content: "";
-//   width: 22px;
-//   height: 0px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   transform: rotate(90deg);
-// }
-
 .soc__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
+  margin-right: 10px;
 }
 
 .soc__link {
   @include font(500, 18px, 1.22, 0.02em);
   color: var(--accent-color);
+  transition: color var(--timing-function);
 }
