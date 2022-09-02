@@ -16,14 +16,6 @@
 }
 
 .modal {
-  @media screen and (max-width: 480px) {
-    min-width: 100%;
-    max-height: 609px;
-  }
-  @media screen and (min-width: 481px) {
-    width: 450px;
-    height: 609px;
-  }
   @media screen and (min-width: 1200px) {
     height: 581px;
     width: 528px;
@@ -31,8 +23,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
