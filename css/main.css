@@ -205,7 +205,7 @@ img {
   padding: 48px 40px;
   background-color: var(--primary-bg-color);
   top: 0;
-  transition: transform var(--timing-function), opacity var(--timing-function);
+  transition: visibility var(--timing-function), opacity var(--timing-function);
 }
 .mobile-menu > .container {
   display: flex;
