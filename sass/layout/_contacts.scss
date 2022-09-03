@@ -28,6 +28,9 @@
     font-size: 12px;
     line-height: 1.17;
   }
+  @media screen and (min-width: 1200px) {
+    @include font(500, 14px, 1.14, 0.02em);
+  }
   &:hover,
   &:focus {
     color: var(--accent-color);
